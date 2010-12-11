@@ -11,9 +11,8 @@
 
 var Fs = require('fs'),
 Sys = require('sys'),
-Log4js = require('log4js'),
-argv = require('optimist').usage('Usage: $0 --loglevel LEVEL').argv,
-Appender = require('./lib/colorappender.js');
+Log4js = require('log4js')(),
+argv = require('optimist').usage('Usage: $0 --loglevel LEVEL').argv;
 
 var modules = [],
 PLUGIN_FOLDER = __dirname + "/plugins/",
@@ -22,8 +21,7 @@ DEFAULT_TIMEOUT = 10000,
 LOG_LEVEL = argv.loglevel || argv.l || 'INFO';
 TIMEOUT = DEFAULT_TIMEOUT;
 
-Log4js.addAppender(Appender.consoleAppender());
-//Log4js.addAppender(Log4js.fileAppender(LOGFILE), 'magnets');
+Log4js.addAppender(Log4js.fileAppender(LOGFILE), 'magnets');
 
 var log = Log4js.getLogger('magnets');
 log.setLevel(LOG_LEVEL);
