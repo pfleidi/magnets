@@ -1,8 +1,14 @@
+/*
+ * cheezburger_network.js
+ *
+ * Magnets module to crawl the cheezburger network
+ */
 
-    Parse = require('htmlparser'),
-    Select = require('soupselect').select,
-    Url = require('url'),
-    Sys = require('sys');
+var Parse = require('htmlparser');
+var Select = require('soupselect').select;
+var Url = require('url');
+var Sys = require('sys');
+
 var urls = [
     //'http://history.icanhascheezburger.com/',
     'http://thereifixedit.failblog.org/',

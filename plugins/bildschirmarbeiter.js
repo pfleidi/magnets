@@ -1,5 +1,3 @@
-var Mag = require('../lib/magnetlib');
-
 exports.createPlugin = function (log) {
   var out = {} ;
   var MAIN="http://www.bildschirmarbeiter.com/pics/all/";
