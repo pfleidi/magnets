@@ -1,5 +1,4 @@
-FUCKING MAGNETS HOW DO THEY WORK?
-=================================
+# FUCKING MAGNETS HOW DO THEY WORK?
 
 This project is designed to be a modular image grabber/crawler written in node.js.
 
@@ -13,8 +12,7 @@ It's main purpose is derived from this XKCD quote:
 The name was borrowed from [the 'fucking magnets' meme](http://knowyourmeme.com/memes/f-cking-magnets-how-do-they-work).
 
 
-FEATURES
---------
+## FEATURES
 
 - download all the funny pictures on the internet directly to your hard disk
 - extensible plugin facility with multi-module support
@@ -26,8 +24,17 @@ FEATURES
     - ... more
 - FUNNY PICTURES ALL THE WAY
 
-TODO:
------
+## Dependencies
+
+For managing dependencies we reccomend [NPM >= 1.0](http://npmjs.org):
+
+    npm install . #inside your magnets directory
+
+## Usage
+
+TODO: ADD THIS!
+
+## TODO:
 
   * Live Ticker (scheduler) - partly implemented
   * Other Plugins (recently added cheezburger network)
@@ -36,16 +43,4 @@ TODO:
   * Use node-htmlparser instead of own regex (used in cheezburger as first plugin)
   * meta data for every picture
 
-Used node.js libraries:
------------------------
-  
-  * [log4js-node for logging](http://github.com/csausdev/log4js-node)
-  * [optimist for commandline parsing](http://github.com/csausdev/log4js-node)
-  * [Node-Htmlparser for Screen Scraping](http://github.com/tautologistics/node-htmlparser)
-  * [soupselect for CSS selectors after HTML-parsing](http://github.com/harryf/node-soupselect.git)
-  * [Coloredjs for colored VT100 output](http://github.com/pfleidi/colored.js)
-  * [node-wwwdude for http-connections](http://github.com/pfleidi/node-wwwdude.git)
-  * [node-dirty to persist meta data](http://github.com/felixge/node-dirty.git)
 
-in short:
-npm install htmlparser soupselect log4js wwwdude optimist
