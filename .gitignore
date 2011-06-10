@@ -2,4 +2,5 @@
 *.jpg
 log/
 images/
-metadata.db
+db/
+node_modules/
