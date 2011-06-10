@@ -1,0 +1,27 @@
+{ "name" : "magnets",
+  "description" : "A modular image crawler for teh interwebs",
+  "tags" : ["http", "memes", "image", "crawler"],
+  "version" : "0.1.0",
+  "author" : "pfleidi and makefu",
+  "directories" : { "lib" : "lib" },
+  "repository" : { 
+    "type" : "git",
+    "url" : "http://github.com/pfleidi/magnets.git"
+  },
+  "bugs" : { 
+    "web" : "http://github.com/pfleidi/magnets/issues" 
+  }, 
+  "licenses" :
+    [{ 
+      "type" : "GPLv3",
+      "url" : "http://github.com/pfleidi/magnets/raw/master/LICENSE"
+    }],
+  "dependencies" : {
+    "log4js" : ">= 0.2.0",
+    "wwwdude" : ">= 0.1.0",
+    "webworker" : ">= 0.8.3",
+    "soupselect" : ">= 0.2.0"
+  },
+  "engines" : { "node": ">= 0.4.0" },
+  "main" : "magnets"
+}
