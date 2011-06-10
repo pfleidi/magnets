@@ -60,9 +60,9 @@ exports.createPlugin = function createPlugin(log) {
 
 function genPlugin(log, url) {
   var out = {};
-  var MAIN= url;
+  var MAIN = url;
   out.LIVE =  undefined;
-  out.BACKWARDS = undefined; //MAIN;
+  out.BACKWARDS = MAIN;
   out.NAME = url + ' plugin';
 
 

@@ -1,3 +1,6 @@
+var Parse = require('htmlparser');
+var Select = require('soupselect').select;
+
 exports.createPlugin = function (log) {
   var out = {} ;
   var MAIN="http://www.bildschirmarbeiter.com/pics/all/";
