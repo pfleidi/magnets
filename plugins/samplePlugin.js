@@ -27,7 +27,7 @@ exports.createPlugin = function (log) {
      * @param content of webpage
      * @return array of urls
      */
-    out.images = function images(content) { 
+    out.nextImages = function nextImages(content) { 
       /*
        * return an array of images with following format:
        */

@@ -18,7 +18,7 @@ exports.createPlugin = function (log) {
   out.BACKWARDS = undefined//MAIN;
   out.NAME = "Soup.io plugin";
 
-  out.getImages = function getImages(content) { 
+  out.nextImages = function nextImages(content) { 
     var images = [];
 
     var handler = new Parse.DefaultHandler(function(err, dom) {
@@ -32,7 +32,7 @@ exports.createPlugin = function (log) {
           ret.forEach(function (container) {
               var pic = {
                 tags: [],
-                caption: ''
+                caption: '',
                 url: ''
               };
 
@@ -86,7 +86,7 @@ exports.createPlugin = function (log) {
     return images;
   };
 
-  out.getNextUrl = function getNextUrl(content) {
+  out.nextUrl = function nextUrl(content) {
     var urlPattern = /<a href=\"([\S]*)\" onclick=\"SOUP.Endless.getMoreBelow/
     var match = urlPattern.exec(content.data);
     var parsedUrl = Url.parse(content.url);

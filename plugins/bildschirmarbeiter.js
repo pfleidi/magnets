@@ -9,7 +9,7 @@ exports.createPlugin = function (log) {
   out.BACKWARDS = BACK;
   out.NAME = "Bildschirmarbeiter.com plugin";
 
-  out.getImages = function (content) { 
+  out.nextImages = function nextImages(content) { 
     var images = [];
     var tags = [];
     var handler = new Parse.DefaultHandler(function(err,dom) {
@@ -44,7 +44,7 @@ exports.createPlugin = function (log) {
     return  images;
   };
 
-  out.getNextUrl = function (content) {
+  out.nextUrl = function nextUrl(content) {
     var urlPattern = /<p class="fleft"><a href="(\S+)">/
       return urlPattern.exec(content.data)[1]
   };
