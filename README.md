@@ -5,7 +5,7 @@ This project is designed to be a modular image grabber/crawler written in node.j
 It's main purpose is derived from this XKCD quote:
 
 > With the collapse of the dollar the government has endorsed an alternate currency.
-> Your monetary worth is now determined by the number of funny pictures savedto your hard drive.
+> Your monetary worth is now determined by the number of funny pictures saved to your hard drive.
 
 [Quote from XKCD](http://xkcd.com/512/)
 
@@ -26,7 +26,7 @@ The name was borrowed from [the 'fucking magnets' meme](http://knowyourmeme.com/
 
 ## Dependencies
 
-For managing dependencies we reccomend [NPM >= 1.0](http://npmjs.org):
+For managing dependencies we recommend [NPM >= 1.0](http://npmjs.org):
 
     npm install . #inside your magnets directory
 
